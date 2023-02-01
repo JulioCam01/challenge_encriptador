@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width" />
+    <title>Alura Encriptador</title>
+    <!-- <link rel="stylesheet" href="Recursos/reset.css" /> -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- link para el tipo de letra  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
+    <!-- link para diseño de alertas  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.min.css" rel="stylesheet"></link>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+    
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div>
+            <div class="encabezado">
+                <img src="imagenes/Logo.png" alt="logo" class="logo" />
+                <h3>lura Encriptador</h3>
+            </div>
+        </div>
+    </header>
+
+    <!-- cuerpo -->
+    <main>
+        <section>
+            <div class="pegar">
+                <img src="imagenes/pegar.png" alt="Pegar" style="height: 30px;" title="Pegar Texto" onclick="btnPegar()">
+            </div>
+        </section>
+        <section>
+            <textarea class="text-area" cols="30" rows="8" placeholder="Ingresa el texto aqui"></textarea>
+            <div >
+                <h6 class="informacion"><img src="imagenes/exclamacion.png" alt="exclamacion" width="14px" height="14px" class="img-exclamacion"> Solo letras mayusculas y minusculas</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desincriptar</button>
+            </div>
+        </section>
+
+
+        <section>
+            <textarea class="mensaje" cols="25" rows="12" readonly="readonly"></textarea>
+            <div>
+                <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <section class="footer">
+            <!-- Icono info-->
+            <div class="left">
+                <a onclick="alerta()"><img src="imagenes/info.png" alt="informacion" class="redes"></a>
+            </div>
+            <!-- mensaje-->
+            <div class="center">
+                <p> © Copyright 2023</p>
+            </div>
+            <!-- redes sociales-->
+            <div class="right">
+                <a href="mailto:julio.arriaga2001@gmail.com"><img src="imagenes/email.png" alt="email" class="redes"></a>
+                <a href="https://www.linkedin.com/in/julio-cesar-arriaga-mendoza-964b0820b/"><img src="imagenes/linkedin.png" alt="linkedin" class="redes"></a>
+                <a href="https://github.com/JulioCam01"><img src="imagenes/github.png" alt="github" class="redes"></a>
+            </div>
+        </section>
+    </footer>
+
+
+    <script>
+        function alerta(){
+            Swal.fire({
+                text: 'Creador: Julio CAM',
+                width: 800,
+                showConfirmButton: false,
+                padding: '3em',
+                color: '#0A3871',
+                background: '#fff url(imagenes/fondoj.jpg)',
+                backdrop: `
+                    url("imagenes/cat-nyan-cat.gif")
+                    left top
+                    no-repeat
+                    `
+            })
+        }        
+    </script>
+
+    <script src="/script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+* {
+    background-color: #f3f5fc;
+    font-family: 'Montserrat', sans-serif;
+    font-style:normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 150%;
+    color: #0a3871;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    margin-bottom: 40px;
+}
+
+.encabezado h3 {
+    margin-top: 32px;
+    margin-left: 70px;
+    font-size: 22px;
+    position: absolute;
+    color: #d8dfe800;
+    transition: color 1s;
+}
+
+.encabezado :hover{
+    color: #0a3871;
+    
+
+}
+
+.logo {
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 85px;
+    position: relative;
+}
+
+main {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+
+.pegar{
+    display: flex;
+    position: fixed;
+    top: 4.35em;
+    left: 0.7em;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.img-exclamacion{
+    align-items: center;
+    vertical-align:baseline;
+}
+
+.text-area {
+    border: none;
+    color: #0a3871;
+    margin-top: 20px;
+    text-transform: lowercase;
+    resize: none;
+}
+
+::placeholder {
+    color: #0a3871;
+}
+
+.text-area:focus {
+    outline: none;
+}
+
+.mensaje {
+    background: white;
+    background-image: url("imagenes/Muneco.png");
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: #0a3871;
+    margin-left: 200px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+    background-position: center;
+    resize: none;
+}
+
+.mensaje:focus {
+    outline: none;
+    background-image: none;
+
+}
+
+.botones {
+    display: flex;
+    margin-top: 18px;
+}
+
+.btn-encriptar {
+    background-color: #0a3871;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 53px;
+    width: 250px;
+}
+
+.btn-desencriptar {
+    background-color: #D8DFE8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: #0a3871;
+    cursor: pointer;
+    margin-left: 30px;
+    height: 53px;
+    width: 250px;
+}
+
+.btn-copiar {
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: #0a3871;
+    cursor: pointer;
+    height: 47px;
+    width: 280px;
+    margin-left: 278px;
+    margin-top: 472px;
+    position: absolute;
+}
+
+
+.left {
+    position: absolute;
+    left: 15px;
+    top: 94%;
+}
+
+.center {
+    position: absolute;
+    left: 666px;
+    top: 92%;
+    cursor:none;
+}
+.center p {
+    font-size: 18px;
+}
+
+.right {
+    position: absolute;
+    left: 90%;
+    top: 94%;
+}
+
+.redes {
+    width: 32px;
+    height: 32px;
+
+}
